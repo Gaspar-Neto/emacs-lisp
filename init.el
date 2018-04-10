@@ -48,6 +48,8 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; before add next lines it requires to install flake8, jedi and autopep8 (I used conda)
+
 (when (require 'flycheck nil t)
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
   (add-hook 'elpy-mode-hook 'flycheck-mode))
