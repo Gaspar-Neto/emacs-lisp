@@ -32,7 +32,6 @@
 (load-theme 'material t) ;; load material theme
 (global-linum-mode t) ;; enable line numbers globally
 
-;; init.el ends here
 
 (elpy-enable)
 (custom-set-variables
@@ -47,6 +46,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;hide toolbar
+(tool-bar-mode -1)
 
 ;; before add next lines it requires to install flake8, jedi and autopep8 (I used conda)
 
@@ -65,5 +67,3 @@
 (require 'ido)
 (ido-mode t)
 
-
-;;testing a commit on github
